@@ -53,7 +53,6 @@ class Controller:
             else:
                 e.control.value = e.control.value.replace(".", "")
                 self.costo = float(e.control.value.replace(",", "."))
-                print(self.costo)
         except Exception:
             self.costo = None
             self._view.budget_massimo.error = "Budget non valido"
